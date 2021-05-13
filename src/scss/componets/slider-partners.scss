@@ -1,0 +1,14 @@
+.slider-partners{
+	background-color: #ffffff;
+	padding: 20px;
+	margin: 20px auto;
+	&__item{
+		display: block;
+		text-decoration: none;
+		img{
+			width: 100%;
+			height: auto;
+			display: block;
+		}
+	}
+}

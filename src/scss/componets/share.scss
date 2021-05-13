@@ -1,0 +1,34 @@
+.share {
+	margin: 20px 0;
+	&__title{
+		color: #4E4E4E;
+		font-size: 16px;
+		margin: 0;
+		font-weight: normal;
+	}
+	.likely .likely__widget{
+		background-color: transparent;
+		margin: 0 10px 10px;
+	}
+	.likely__icon{
+
+		svg{
+			display: none;
+		}
+		&_twitter{
+			background-image: url("../img/bxl-twitter.svg.svg");
+		}
+		&_facebook{
+			background-image: url("../img/bxl-facebook.svg.svg");
+		}
+		&_vkontakte{
+			background-image: url("../img/bxl-vk.svg.svg");
+		}
+		&_telegram{
+			background-image: url("../img/bxl-telegram.svg.svg");
+		}
+		&_whatsapp{
+			background-image: url("../img/bxl-whatsapp.svg.svg");
+		}
+	}
+}

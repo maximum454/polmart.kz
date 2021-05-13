@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    @@include('./template/_meta.html')
+    <title>Детальная</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/besser.min.css">
+</head>
+<body>
+<div class="wrp">
+    @@include('./template/_header.html')
+    <div class="navbar">
+        <div class="container">
+            <div class="row">
+                <div class="breadcrumbs">
+                    <div class="breadcrumbs__item">
+                        <a class="breadcrumbs__link" href="#">Главная</a>
+                        <i class="breadcrumbs__icon"></i>
+                    </div>
+                    <div class="breadcrumbs__item">
+                        <a class="breadcrumbs__link" href="#">Каталог</a>
+                        <i class="breadcrumbs__icon"></i>
+                    </div>
+                    <div class="breadcrumbs__item">
+                        <a class="breadcrumbs__link" href="#">Ламинат</a>
+                        <i class="breadcrumbs__icon"></i>
+                    </div>
+                    <div class="breadcrumbs__item">
+                        <span class="breadcrumbs__active">Дуб Глостер 453</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main>
+        <section class="page container">
+            <section class="product-detail">
+                <div class="product-detail__slider">
+                    <div class="slider-for-product">
+                        <div>
+                        <img src="img/slider-for-product.png" width="660" height="371" alt="">
+                        </div>
+                        <div>
+                            <img src="img/slider-for-product.png" width="660" height="371" alt="">
+                        </div>
+                        <div>
+                            <img src="img/slider-for-product.png" width="660" height="371" alt="">
+                        </div>
+                        <div>
+                            <img src="img/slider-for-product.png" width="660" height="371" alt="">
+                        </div>
+                    </div>
+
+                    <div class="slider-nav-product">
+                        <div>
+                            <img src="img/slider-for-product.png" width="165" height="92" alt="">
+                        </div>
+                        <div>
+                            <img src="img/slider-for-product.png" width="165" height="92" alt="">
+                        </div>
+                        <div>
+                            <img src="img/slider-for-product.png" width="165" height="92" alt="">
+                        </div>
+                        <div>
+                            <img src="img/slider-for-product.png" width="165" height="92" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="product-detail__txt">
+                    <h1 class="product-detail__title">Дуб Глостер 453</h1>
+                    <ul class="product-detail__feature">
+                        <li><b>Бренд:</b> Kastamonu</li>
+                        <li><b>Коллекция:</b> SunFloor</li>
+                        <li><b>Структура поверхности:</b> Рустик</li>
+                        <li><b>Ширина:</b> 195 мм</li>
+                    </ul>
+                    <div class="product-detail__row">
+                        <div class="product-detail__count number-count">
+                            <span class="btn minus">-</span>
+                            <input data-price="3400" type="text" value="1" size="5"/>
+                            <span class="btn plus">+</span>
+                        </div>
+                        <div class="product-detail__price"><span id="price">3400</span> т/м<sup>2</sup></div>
+                    </div>
+                    <a class="product-detail__compare" href="#">Добавить к сравнению</a>
+
+                    <a class="btn" href="#product">купить</a>
+                    <div class="share">
+                        <h6 class="share__title">Поделиться</h6>
+                    <div class="likely">
+                        <div class="twitter"></div>
+                        <div class="facebook"></div>
+                        <div class="vkontakte"></div>
+                        <div class="telegram"></div>
+                        <div class="whatsapp"></div>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="product-detail__tabs">
+                    <div class="tabs">
+                        <div class="tabs__nav">
+                            <a class="tabs__link tabs__link_active" href="#content-1">Описание</a>
+                            <a class="tabs__link" href="#content-2">Характеристики</a>
+                            <a class="tabs__link" href="#content-3">Калькулятор</a>
+                        </div>
+                        <div class="tabs__content">
+                            <div class="tabs__pane tabs__pane_show" id="content-1">
+                                Рисунок ярко выраженной текстуры натуральной древесины и элегантность современной классики объединены и выгодно подчеркнуты в коллекции Sunfloor от компании KASTAMONU. Рустикальная структура поверхности и поразительное сходство с текстурой натуральной древесины, придает покрытию естественный вид. Ламинированный пол оснащен замковым соединением UniClic, что позволяет произвести быструю и удобную укладку. Ламинат Sunfloor является экологичным материалом, так как при изготовлении используется натуральное сырье, наивысшего качества.
+                            </div>
+                            <div class="tabs__pane" id="content-2">
+                                Содержимое 2...
+                            </div>
+                            <div class="tabs__pane" id="content-3">
+                                Содержимое 3...
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section class="card container">
+            <h2 class="card__title">Похожие товары</h2>
+            <div class="card__body">
+                <article class="card__item">
+                    <div class="card__img">
+                        <img src="../img/card-img.png" width="260" height="195" alt="">
+                        <div class="card__label">
+                            <div class="card__stock">%</div>
+                        </div>
+                        <div class="card__compare"></div>
+                    </div>
+                    <div class="card__txt">
+                        <h5 class="card__name">Ламинат CLASSEN Дуб Касаи</h5>
+                        <div class="card__category">
+                            <p><b>Коллекция:</b> Ambience</p>
+                            <p><b>Производитель:</b> Classen</p>
+                        </div>
+                        <div class="card__price">
+                            <span class="old">11500</span>
+                            <div class="new">8999 тг/м <sup>2</sup></div>
+                        </div>
+                        <a class="btn second" href="#">Подробнее</a>
+                    </div>
+                </article>
+                <article class="card__item">
+                    <div class="card__img">
+                        <img src="../img/card-img.png" width="260" height="195" alt="">
+                        <div class="card__label">
+                            <div class="card__stock">%</div>
+                        </div>
+                        <div class="card__compare"></div>
+                    </div>
+                    <div class="card__txt">
+                        <h5 class="card__name">Ламинат CLASSEN Дуб Касаи</h5>
+                        <div class="card__category">
+                            <p><b>Коллекция:</b> Ambience</p>
+                            <p><b>Производитель:</b> Classen</p>
+                        </div>
+                        <div class="card__price">
+                            <span class="old">11500</span>
+                            <div class="new">8999 тг/м <sup>2</sup></div>
+                        </div>
+                        <a class="btn second" href="#">Подробнее</a>
+                    </div>
+                </article>
+                <article class="card__item">
+                    <div class="card__img">
+                        <img src="../img/card-img.png" width="260" height="195" alt="">
+                        <div class="card__label">
+                            <div class="card__stock">%</div>
+                        </div>
+                        <div class="card__compare"></div>
+                    </div>
+                    <div class="card__txt">
+                        <h5 class="card__name">Ламинат CLASSEN Дуб Касаи</h5>
+                        <div class="card__category">
+                            <p><b>Коллекция:</b> Ambience</p>
+                            <p><b>Производитель:</b> Classen</p>
+                        </div>
+                        <div class="card__price">
+                            <span class="old">11500</span>
+                            <div class="new">8999 тг/м <sup>2</sup></div>
+                        </div>
+                        <a class="btn second" href="#">Подробнее</a>
+                    </div>
+                </article>
+                <article class="card__item">
+                    <div class="card__img">
+                        <img src="../img/card-img.png" width="260" height="195" alt="">
+                        <div class="card__label">
+                            <div class="card__stock">%</div>
+                        </div>
+                        <div class="card__compare"></div>
+                    </div>
+                    <div class="card__txt">
+                        <h5 class="card__name">Ламинат CLASSEN Дуб Касаи</h5>
+                        <div class="card__category">
+                            <p><b>Коллекция:</b> Ambience</p>
+                            <p><b>Производитель:</b> Classen</p>
+                        </div>
+                        <div class="card__price">
+                            <span class="old">11500</span>
+                            <div class="new">8999 тг/м <sup>2</sup></div>
+                        </div>
+                        <a class="btn second" href="#">Подробнее</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="seo-text container">
+            <p>Besser – один из крупнейших поставщиков ламинированного покрытия оптом и в розницу в Республике
+                Казахстан, представляющий ламинат от известных мировых производителей . Мы постоянно расширяем свой
+                ассортимент, поэтому на сегодняшний день у нас представлен самый широкий выбор ламината и паркетной
+                доски, от ведущих российских и зарубежных производителей. Мы предлагаем только лучшую продукцию,
+                качественный сервис и индивидуальный подход к каждому клиенту.
+                Мы не просто продаём паркет и ламинат, мы стремимся помочь своим клиентам с выбором наиболее подходящего
+                материала для настила полов, подсказать верное решение и порекомендовать именно те материалы, которые
+                наилучшим образом будут соответствовать всем пожеланиям каждого члена Вашей семьи. Мы всегда рады
+                сотрудничеству и конструктивным предложениям. Мы постоянно работаем над улучшением качества, чтобы
+                предложить нашим клиентам еще более высокий уровень качества обслуживания.</p>
+        </section>
+    </main>
+    @@include('./template/_footer.html')
+</div>
+
+<script src="js/besser.min.js"></script>
+</body>
+</html>

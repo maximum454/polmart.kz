@@ -1,0 +1,39 @@
+.contacts{
+	display: flex;
+	flex-wrap: wrap;
+	color: #424242;
+	h2{
+		font-size: 24px;
+		margin: 0 0 10px;
+	}
+	&__info{
+		flex: 1 0 0;
+		margin-right: 20px;
+		min-width: 236px;
+	}
+	&__item{
+		margin-bottom: 20px;
+	}
+	&__phone{
+		color: #424242;
+		font-size: 18px;
+		text-decoration: none;
+		transition: .3s;
+		&:hover{
+			color: #9BD147;
+			transition: .3s;
+		}
+	}
+	&__map{
+		flex: 2 0 0;
+		min-width: 240px;
+	}
+	@include r(539){
+		&__info{
+			flex: 1 0 0;
+			margin-right: 0;
+			margin-bottom: 20px;
+			min-width: 236px;
+		}
+	}
+}

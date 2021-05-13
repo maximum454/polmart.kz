@@ -1,0 +1,26 @@
+.pagination {
+	margin: 50px auto;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	li {
+		background-color: #ECECEC;
+		margin: 0 5px;
+		a, span {
+			min-width: 30px;
+			height: 30px;
+			font-size: 14px;
+			color: #424242;
+			text-decoration: none;
+			display: block;
+			padding: 7px 10px;
+			text-align: center;
+			&.active{
+				background-color: #9BD147;
+				color: #ffffff;
+			}
+		}
+	}
+}

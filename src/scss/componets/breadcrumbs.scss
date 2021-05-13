@@ -1,0 +1,22 @@
+.breadcrumbs{
+	display: flex;
+	&__item{
+		display: flex;
+		align-items: center;
+	}
+	&__icon{
+		display: block;
+		background-image: url("../img/breadcrumbs-icon.svg");
+		background-repeat: no-repeat;
+		background-size: 100%;
+		width: 10px;
+		height: 15px;
+		margin:0 10px;
+	}
+	&__link{
+		color: #333333;
+	}
+	&__active{
+		color: #9BD147;
+	}
+}

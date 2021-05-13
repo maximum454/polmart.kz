@@ -1,0 +1,101 @@
+.card{
+	background-color: #ffffff;
+	padding: 20px;
+	margin: 20px auto;
+	&__title{
+		font-size: 32px;
+		margin: 0 0 47px;
+	}
+	&__body{
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+		grid-column-gap: 35px;
+		grid-row-gap: 35px;
+	}
+	&__item{
+		background-color: #ffffff;
+		border-radius: 5px;
+		overflow: hidden;
+		box-shadow: 0 0  10px rgba(#000,.25);
+	}
+	&__img{
+		position: relative;
+		@include maintain-ratio(4 3);
+		img{
+			width: 100%;
+			height: auto;
+			display: block;
+		}
+	}
+	&__label{
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 10;
+		color: #ffffff;
+		font-size: 16px;
+		text-align: center;
+		display: flex;
+		>div{
+			padding: 8px 22px;
+			&:last-child{
+				border-radius: 0 0 33px 0;
+			}
+		}
+	}
+	&__stock{
+		background-color: #F8484A;
+	}
+	&__compare{
+		position: absolute;
+		right: 10px;
+		bottom: 10px;
+		width: 35px;
+		height: 35px;
+		background-color: #ffffff;
+		background-image: url("../img/mdi_compare_arrows.svg");
+		background-position: center;
+		background-repeat: no-repeat;
+		border-radius: 50%;
+		z-index: 10;
+		color: #ffffff;
+		font-size: 22px;
+		text-align: center;
+	}
+	&__hit{
+		background-color: #358AD9;
+	}
+	&__new{
+		background-color: #9BD147;
+	}
+	&__txt{
+		padding: 20px;
+	}
+	&__name{
+		font-size: 14px;
+		font-weight: bold;
+		margin: 0 0 18px;
+	}
+	&__category{
+		margin-bottom: 10px;
+		p{
+			margin: 0;
+			font-size: 12px;
+		}
+	}
+	&__price{
+		margin-bottom: 20px;
+		font-family: 'Montserrat', sans-serif;
+
+		.old{
+			font-size: 12px;
+			text-decoration: line-through;
+		}
+		.new{
+			font-size: 18px;
+		}
+	}
+	.btn{
+		width: 100%;
+	}
+}

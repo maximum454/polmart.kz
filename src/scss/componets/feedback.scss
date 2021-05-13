@@ -1,0 +1,24 @@
+.feedback{
+	&__item{
+		margin-bottom: 15px;
+	}
+	&__input{
+		width: 100%;
+		border: 1px solid #C4C4C4;
+		padding: 8px 20px;
+		&::placeholder{
+			color: #C4C4C4;
+		}
+	}
+	&__message{
+		width: 100%;
+		border: 1px solid #C4C4C4;
+		padding: 8px 20px;
+		height: 105px;
+		resize: none;
+		&::placeholder{
+			color: #C4C4C4;
+		}
+	}
+
+}

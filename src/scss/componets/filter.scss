@@ -1,0 +1,25 @@
+.filter{
+	border-radius: 5px;
+	border: 1px solid #C4C4C4;
+	background-color: rgba(#9bd147, .5);
+	&__header{
+		padding: 20px;
+		text-align: center;
+		background-color: #E5E5E5;
+	}
+	&__title{
+		color: #424242;
+		font-size: 22px;
+	}
+	&__body{
+		padding: 20px;
+	}
+	&__item{
+		margin-bottom: 20px;
+	}
+	&__name{
+		font-size: 22px;
+		color: #424242;
+		margin: 0 0 10px;
+	}
+}

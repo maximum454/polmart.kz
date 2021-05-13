@@ -1,0 +1,13 @@
+.product{
+	display: grid;
+	grid-template-columns: 260px 1fr;
+	grid-column-gap: 40px;
+	&__filter{
+
+	}
+	&__card{
+		.btn{
+			width: 100%;
+		}
+	}
+}
