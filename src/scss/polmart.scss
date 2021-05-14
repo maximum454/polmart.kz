@@ -30,12 +30,9 @@ body{
 	display: flex;
 	flex-wrap: wrap;
 }
-.navbar{
-	background-color: #ECECEC;
-	padding: 10px;
-}
 .page{
-	background-color: #ffffff;
+	background-color: rgba(#ffffff,.7);
+	border-radius: 4px;
 	padding: 20px;
 	margin: 20px auto;
 }
@@ -156,3 +153,12 @@ body{
 
 //Табы
 @import "componets/tabs";
+
+//Сортировка
+@import "componets/sort";
+
+//Навбар
+@import "componets/navbar";
+
+//Калькулятор
+@import "componets/calculator";

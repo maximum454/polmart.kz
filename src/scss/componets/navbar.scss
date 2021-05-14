@@ -1,0 +1,16 @@
+.navbar{
+  background-color: rgba(#ececec,.7);
+  padding: 10px;
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  &__breadcrumb {
+    flex: 1 0 0;
+  }
+  &__sort {
+    margin-left: auto;
+    align-self: center;
+  }
+}

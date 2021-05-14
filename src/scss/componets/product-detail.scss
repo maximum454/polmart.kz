@@ -53,6 +53,7 @@
 		position: relative;
 		padding-left: 44px;
 		margin: 24px 0;
+		cursor: pointer;
 		&:before {
 			content: '';
 			position: absolute;
@@ -68,8 +69,40 @@
 			background-repeat: no-repeat;
 			background-size: 24px;
 		}
+		&.active:before {
+			background-image: url(../img/mdi_compare_arrows-light.svg);
+			background-color: #9bd147;
+		}
+		input {
+			position: absolute;
+			z-index: -1;
+			opacity: 0;
+		}
 	}
 	&__tabs{
 		grid-area: tabs;
+	}
+	.table_propeties {
+		margin: 0;
+		padding: 0;
+		li {
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-ms-flex-wrap: wrap;
+			flex-wrap: wrap;
+			background: #ececec;
+			&:nth-child(2n) {
+				background: #c4c4c4;
+			}
+			div {
+				-webkit-box-flex: 1;
+				-ms-flex: 1 0 0px;
+				flex: 1 0 0;
+				min-width: 150px;
+				padding: 10px;
+				font-size: 18px;
+			}
+		}
 	}
 }

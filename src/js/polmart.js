@@ -1,32 +1,41 @@
-@@include('partials/jquery.min.js')
-@@include('partials/webp.js')
-@@include('partials/burger.js')
-@@include('partials/slick.js')
+@@include('./partials/jquery.min.js')
+@@include('./partials/webp.js')
+@@include('./partials/burger.js')
+@@include('./partials/slick.js')
 @@include('./partials/TweenLite.min.js')
 @@include('./partials/TimelineMax.min.js')
 @@include('./partials/EasePack.min.js')
 @@include('./partials/CSSPlugin.min.js')
 @@include('./partials/remodal.js')
 @@include('./partials/likely.js')
-@@include('./partials/tabs.js')
+@@include('./partials/calculator.js')
+@@include('./partials/order.js')
+@@include('./partials/call.js')
+@@include('./partials/jquery.fancybox.js')
 
 $(function () {
-
     var sliderMain = $('.js-slider-main').slick({
         dots: false,
         infinite: true,
         arrows:false,
+        autoplay: true,
+        autoplaySpeed: 6000,
         speed: 300,
         slidesToShow: 1,
-        adaptiveHeight: false
+        adaptiveHeight: false,
+        responsive: [
+            {
+                breakpoint: 767,
+                settings: "unslick"
+            }
+        ]
     });
 
     sliderMain.on('afterChange', function(event, slick, current){
-        console.log(current);
-        sliderRubric = document.getElementsByClassName('slider-main__rubric');
-        sliderName = document.getElementsByClassName('slider-main__name');
-        sliderPrice = document.getElementsByClassName('slider-main__price');
-        tl = new TimelineMax();
+        var sliderRubric = $('.slider-main__rubric');
+        var sliderName = $('.slider-main__name');
+        var sliderPrice = $('.slider-main__price');
+        var tl = new TimelineMax();
         tl
             .fromTo(sliderRubric, .6, {left: "0",top: "-30px"}, {left: '0',top: '0',ease:Linear.easeNone},'group1')
             .fromTo(sliderName, .6, {left: "100%",top: "0"}, {left: '0',top: '0',ease:Linear.easeNone},'group1')
@@ -35,25 +44,48 @@ $(function () {
 
     $('.js-slider-partners').slick({
         dots: false,
-        arrows: true,
+        arrows: false,
         infinite: true,
+        autoplaySpeed: 5000,
         speed: 300,
         slidesToShow: 4,
-        adaptiveHeight: false
+        adaptiveHeight: false,
+        responsive: [
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+        ]
     });
 
     $('.slider-for-product').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
-        fade: true,
-        asNavFor: '.slider-nav-product'
+        fade: false,
+        asNavFor: '.slider-nav-product',
+        adaptiveHeight: true
     });
     $('.slider-nav-product').slick({
         slidesToShow: 4,
         slidesToScroll: 1,
         asNavFor: '.slider-for-product',
-        dots: true,
+        dots: false,
         centerMode: false,
         focusOnSelect: true
     });
@@ -66,7 +98,8 @@ $(function () {
         var itog = price * count;
         $input.val(count);
         $input.change();
-        $('#price').html(itog);
+        $('#countitog').html(count);
+        $('#price, #pricemodal').html(itog);
         return false;
     });
     $('.plus').click(function () {
@@ -75,17 +108,18 @@ $(function () {
         var itog = price * (parseInt($input.val()) + 1);
         $input.val(parseInt($input.val()) + 1);
         $input.change();
-        $('#price').html(itog);
+        $('#countitog').html(parseInt($input.val()));
+        $('#price, #pricemodal').html(itog);
         return false;
     });
-
-    var tab = $('.tabs .tabs__content > .tabs__pane');
-    tab.hide().filter(':first').show();
 
     $('.js-toggle-filter').on('click', function (){
         $('.bx-filter-section').toggleClass('active');
     })
 
+
+    var tab = $('.tabs .tabs__content > .tabs__pane');
+    tab.hide().filter(':first').show();
 
     // Клики по вкладкам.
     $('.tabs .tabs__nav .tabs__link').click(function(){
@@ -129,6 +163,4 @@ $(function () {
             el.innerHTML = text + endCharacter;
         }
     });
-
-    $tabs('.tabs');
 })
