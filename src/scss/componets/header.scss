@@ -66,14 +66,17 @@
 
 	&__logo {
 		flex: 1 0 0;
-		font-size: 62px;
-		@include adaptive-font(62, 42);
 		display: block;
 		text-decoration: none;
 		color: #ffffff;
 		max-width: 190px;
 		margin-right: 13px;
-
+		img{
+			display: block;
+			max-width: 100%;
+			height: auto;
+			object-fit: cover;
+		}
 		&:first-letter {
 			color: #73B211;
 		}

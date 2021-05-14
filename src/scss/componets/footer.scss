@@ -12,8 +12,16 @@
 		font-size: 62px;
 		text-decoration: none;
 		display: block;
+		background-color: rgba(#000,.7);
+		padding: 14px;
 		&:first-letter{
 			color: #73B211;
+		}
+		img{
+			display: block;
+			max-width: 100%;
+			height: auto;
+			object-fit: cover;
 		}
 	}
 	&__item{
