@@ -1,11 +1,12 @@
 .subscribe{
 	width: 100%;
 	padding: 10px 0;
-	background-color: #9BD147;
+	background-color: #73B211;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-wrap: wrap;
+	display: none;
 	&__title{
 		color: #fff;
 		font-size: 18px;
@@ -27,7 +28,7 @@
 		&:focus{
 			border: 0;
 			outline: none;
-			box-shadow: 0 0 5px 4px #9BD147;
+			box-shadow: 0 0 5px 4px #73B211;
 		}
 	}
 	&__submit{

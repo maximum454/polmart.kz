@@ -1,0 +1,158 @@
+@import 'partials/normalize';
+@import 'mixin';
+@import 'partials/slick';
+@import 'partials/remodal';
+@import 'partials/remodal-default-theme';
+@import 'partials/likely';
+
+
+*{
+	box-sizing: border-box;
+}
+body{
+	background-color: #fff;
+	font-family: 'Roboto', sans-serif;
+	color: #424242;
+	&.lock{
+		overflow: hidden;
+	}
+}
+.wrp{
+	background-image: url("../img/body-bg.png");
+	background-attachment: fixed;
+}
+.container{
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+.navbar{
+	background-color: #ECECEC;
+	padding: 10px;
+}
+.page{
+	background-color: #ffffff;
+	padding: 20px;
+	margin: 20px auto;
+}
+
+.btn{
+	width: fit-content;
+	display: block;
+	text-decoration: none;
+	border: 0;
+	border-radius: 5px;
+	padding: 10px 20px;
+	background-color: #73B211;
+	font-size: 28px;
+	color: #ffffff;
+	&.second{
+		background-color: transparent;
+		border: 1px solid #73B211;
+		border-radius: 5px;
+		color: #73B211;
+		font-size: 14px;
+		font-weight: bold;
+		text-align: center;
+	}
+
+}
+.w100{
+	width: 100%;
+}
+
+.remodal{
+	background-image: url("../img/body-bg.jpg");
+	@media only screen and (min-width: 641px) {
+		max-width: 540px;
+	}
+	.remodal-close{
+		top: 10px;
+		right: 10px;
+		left: auto;
+		&:before {
+			content: '';
+			font-family: inherit;
+			position: absolute;
+			top: 0;
+			left: 0;
+			display: block;
+			width: 35px;
+			height: 35px;
+			text-align: center;
+			background-image: url("../img/mdi_close.svg");
+			background-size: 100%;
+		}
+	}
+	&__title{
+		color: #fff;
+	}
+}
+
+
+//Шапка
+@import "componets/header";
+
+//Главная навигация
+@import "componets/nav";
+
+//Дополнительная навигация
+@import "componets/nav-second";
+
+//Поиск в шапке
+@import "componets/search-header";
+
+//Рассылка
+@import "componets/subscribe";
+
+//Подвал
+@import "componets/footer";
+
+//слайдер на главной
+@import "componets/slider-main";
+
+//Карточки товара
+@import "componets/card";
+
+//Слайдер партнеров
+@import "componets/slider-partners";
+
+//Сео текст
+@import "componets/seo-text";
+
+//Хлебные крошки
+@import "componets/breadcrumbs";
+
+//Страница каталог
+@import "componets/catalog-list";
+
+//Страница продукции
+@import "componets/product";
+
+//Страница детальной продукции
+@import "componets/product-detail";
+
+//Фильтр
+@import "componets/filter";
+
+//Фильтер
+@import "componets/pagination";
+
+//Страница контакты
+@import "componets/contacts";
+
+//Форма связи
+@import "componets/feedback";
+
+//колличество
+@import "componets/number-count";
+
+//поделится
+@import "componets/share";
+
+//Табы
+@import "componets/tabs";

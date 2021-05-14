@@ -1,5 +1,6 @@
 .footer{
-	background-color: #ffffff;
+	background-color: rgba(#ffffff,.7);
+	border-top: 10px solid #73B211;
 	padding: 30px 0;
 	&__row{
 		display: flex;
@@ -12,7 +13,7 @@
 		text-decoration: none;
 		display: block;
 		&:first-letter{
-			color: #9BD147;
+			color: #73B211;
 		}
 	}
 	&__item{

@@ -1,4 +1,4 @@
-let name_project = 'besser';
+let name_project = 'polmart';
 let project = 'build';
 let source = 'src';
 let fs = require('fs');

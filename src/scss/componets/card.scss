@@ -1,7 +1,8 @@
 .card{
-	background-color: #ffffff;
+	background-color: rgba(#ffffff,.7);
 	padding: 20px;
 	margin: 20px auto;
+	border-radius: 4px;
 	&__title{
 		font-size: 32px;
 		margin: 0 0 47px;
@@ -61,12 +62,22 @@
 		color: #ffffff;
 		font-size: 22px;
 		text-align: center;
+		cursor: pointer;
+		&.active {
+			background-color: #73B211;
+			background-image: url(../img/mdi_compare_arrows-light.svg);
+		}
+		input {
+			position: absolute;
+			z-index: -1;
+			opacity: 0;
+		}
 	}
 	&__hit{
 		background-color: #358AD9;
 	}
 	&__new{
-		background-color: #9BD147;
+		background-color: #73B211;
 	}
 	&__txt{
 		padding: 20px;
