@@ -12,45 +12,6 @@
 
 	}
 
-	&__nav {
-		background-color: rgba(#4E4E4E,.7);
-		padding: 10px 0;
-	}
-
-	&__catalog {
-		background-color: rgba(#73B211,.7);
-		padding: 10px 0;
-	}
-
-	&__catalog-menu {
-		margin: 0;
-		padding: 0;
-		list-style: none;
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		overflow: auto;
-		white-space: nowrap;
-		li {
-			display: inline-block;
-			margin-right: 10px;
-			a {
-				color: #fff;
-				font-size: 18px;
-				font-weight: 400;
-				text-decoration: none;
-				position: relative;
-				transition: all 100ms ease 0s;
-
-				&:hover {
-					color: #ffffff;
-					opacity: .7;
-					transition: all 100ms ease 0s;
-				}
-			}
-		}
-	}
-
 	&__center {
 		background-color: rgba(#000,.7);
 		border-radius: 4px;
@@ -62,6 +23,8 @@
 		display: flex;
 		flex-wrap: wrap;
 		align-items: center;
+        justify-content: space-between;
+        gap: 20px;
 	}
 
 	&__logo {
@@ -69,7 +32,7 @@
 		display: block;
 		text-decoration: none;
 		color: #ffffff;
-		max-width: 190px;
+		max-width: 382px;
 		margin-right: 13px;
 		img{
 			display: block;
@@ -83,96 +46,29 @@
 	}
 
 	&__phone {
-		flex: 1 0 0;
-		max-width: 130px;
-		min-width: 130px;
-
+		
+	
 		a {
 			display: block;
 			text-decoration: none;
 			color: #ffffff;
-			font-size: 16px;
+			font-size: 21px;
 		}
+        span{
+            color: #ffffff;
+            font-size: 14px;
+        }
 	}
 
-	&__icons {
-		flex: 1 0 0;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		padding: 20px 0;
-	}
 
 	&__search {
 		flex: 1 0 0;
-		max-width: 313px;
 		min-width: 160px;
 	}
 
-	&__item {
-		display: block;
-		text-decoration: none;
-		color: #ffffff;
-		font-size: 14px;
-		position: relative;
-		padding-left: 44px;
-		margin: 0 15px;
-		max-width: 115px;
 
-		&:before {
-			content: '';
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 34px;
-			height: 34px;
-			border: 2px solid #73B211;
-			border-radius: 50%;
-			background-position: center;
-			background-repeat: no-repeat;
-			background-size: 24px;
-		}
-
-		&.call {
-			&:before {
-				background-image: url("../img/mdi_phone.svg");
-				background-position: center 7px;
-			}
-		}
-
-		&.message {
-			&:before {
-				background-image: url("../img/mdi_email.svg");
-			}
-		}
-
-		&.compare {
-			&:before {
-				background-image: url("../img/mdi_compare_arrows.svg");
-			}
-		}
-	}
 	@include r(767) {
-		&__catalog-menu {
-			max-width: 727px;
-			display: block;
-			li {
-
-				a {
-					color: #424242;
-					font-size: 18px;
-					font-weight: 400;
-					text-decoration: none;
-					position: relative;
-					transition: all 100ms ease 0s;
-
-					&:hover {
-						color: #ffffff;
-						transition: all 100ms ease 0s;
-					}
-				}
-			}
-		}
+		
 	}
 	@include r(620) {
 		&__center {
@@ -186,12 +82,5 @@
 			max-width: 100%;
 		}
 
-	}
-	@include r(439) {
-		&__item {
-			&.message {
-				display: none;
-			}
-		}
 	}
 }

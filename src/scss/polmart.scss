@@ -1,9 +1,11 @@
 @import 'partials/normalize';
-@import 'mixin';
 @import 'partials/slick';
 @import 'partials/remodal';
 @import 'partials/remodal-default-theme';
 @import 'partials/likely';
+
+@import 'mixin';
+@import 'buttons';
 
 
 *{
@@ -35,28 +37,6 @@ body{
 	border-radius: 4px;
 	padding: 20px;
 	margin: 20px auto;
-}
-
-.btn{
-	width: fit-content;
-	display: block;
-	text-decoration: none;
-	border: 0;
-	border-radius: 5px;
-	padding: 10px 20px;
-	background-color: #73B211;
-	font-size: 28px;
-	color: #ffffff;
-	&.second{
-		background-color: transparent;
-		border: 1px solid #73B211;
-		border-radius: 5px;
-		color: #73B211;
-		font-size: 14px;
-		font-weight: bold;
-		text-align: center;
-	}
-
 }
 .w100{
 	width: 100%;
@@ -90,9 +70,15 @@ body{
 	}
 }
 
+.d-none{
+    display: none!important;
+}
 
 //Шапка
 @import "componets/header";
+
+//Шапка каталог
+@import "componets/header-catalog.scss";
 
 //Главная навигация
 @import "componets/nav";
