@@ -1,0 +1,60 @@
+.compare-stick {
+    position: fixed;
+    right: 5px;
+    width: 76px;
+    height: 125px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__item {
+        display: block;
+        text-decoration: none;
+        color: #424242;
+        font-size: 14px;
+        position: relative;
+        margin: 0;
+        max-width: 115px;
+        cursor: pointer;
+        text-align: center;
+        &:before {
+            content: "";
+            display: block;
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 34px;
+            height: 34px;
+            margin: 0 auto 10px;
+            border: 2px solid #9bd147;
+            border-radius: 50%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 24px;
+            background-image: url(../img/mdi_compare_arrows.svg);
+        }
+    }
+
+    &__count {
+        position: absolute;
+        top: -5px;
+        left: 5px;
+        background-color: #fff;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        color: #4e4e4e;
+        font-size: 12px;
+        border: 1px solid #9bd147;
+    }
+}

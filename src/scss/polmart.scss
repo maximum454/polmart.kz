@@ -69,7 +69,7 @@ body{
 		}
 	}
 	&__title{
-		color: #fff;
+		color: #424242;
 	}
 }
 
@@ -154,3 +154,6 @@ body{
 
 //Галлерея
 @import "componets/gallery";
+
+//Сравнение
+@import "componets/compare-stick";

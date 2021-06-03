@@ -10346,6 +10346,10 @@ $(function () {
         focusOnSelect: true
     });
 
+    $('.js-catalog-btn').on('click', function(){
+        $('.header-catalog__menu').toggleClass('active');
+    })
+
     $('.minus').click(function () {
         var $input = $(this).parent().find('input');
         var count = parseInt($input.val()) - 1;

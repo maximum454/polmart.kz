@@ -53,9 +53,12 @@
 			text-decoration: none;
 			color: #ffffff;
 			font-size: 21px;
+            &:hover{
+                color: #9bd147; 
+            }
 		}
         span{
-            color: #ffffff;
+            color: #9bd147;
             font-size: 14px;
         }
 	}

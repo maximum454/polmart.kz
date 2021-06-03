@@ -1,22 +1,20 @@
 .footer{
-	background-color: rgba(#ffffff,.7);
+	background-color: rgba(#424242,.9);
 	border-top: 10px solid #73B211;
 	padding: 30px 0;
+    color: #fff;
 	&__row{
 		display: flex;
 		margin: 0 -30px;
 		flex-wrap: wrap;
 	}
 	&__logo{
-		color: #000;
-		font-size: 62px;
-		text-decoration: none;
 		display: block;
-		background-color: rgba(#000,.7);
-		padding: 14px;
-		&:first-letter{
-			color: #73B211;
-		}
+		text-decoration: none;
+		color: #ffffff;
+		max-width: 382px;
+		margin-right: 13px;
+		
 		img{
 			display: block;
 			max-width: 100%;
@@ -36,11 +34,11 @@
 		}
 	}
 	&__phone{
-		color: #424242;
+		color: #fff;
 		text-decoration: none;
 		display: block;
-		margin-bottom: 5px;
-		@include adaptive-font(18,14);
+		margin-bottom: 30px;
+		font-size: 18px;
 	}
 	&__adress{
 		@include adaptive-font(18,14);
@@ -64,9 +62,12 @@
 			margin-bottom: 13px;
 		}
 		a{
-			color: #424242;
+			color: #fff;
 			@include adaptive-font(18,14);
 			text-decoration: none;
+            &:hover{
+                color: #9bd147;
+            }
 		}
 	}
 	@include r(1023){

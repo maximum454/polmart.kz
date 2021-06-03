@@ -37,6 +37,7 @@
 		font-size: 13px;
 		text-align: center;
 		display: flex;
+        gap: 5px;
 		>div{
 			padding: 4px 12px;
 			border-radius: 4px;
@@ -104,6 +105,11 @@
 			font-size: 18px;
 		}
 	}
+    &__country{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
 	.btn{
 		width: 100%;
 	}
