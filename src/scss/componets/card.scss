@@ -113,4 +113,20 @@
 	.btn{
 		width: 100%;
 	}
+    @include r(1023){
+        &__body{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-column-gap: 20px;
+            grid-row-gap: 20px;
+        } 
+    }
+    @include r(767){
+        &__body{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-column-gap: 20px;
+            grid-row-gap: 20px;
+        } 
+    }
 }

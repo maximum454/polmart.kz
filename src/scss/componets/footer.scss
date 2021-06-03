@@ -83,19 +83,18 @@
 				min-width: 260px;
 			}
 		}
+        
 	}
-	@include r(440){
-		&__item{
-			flex: 1 0 0;
-			margin: 0 0 30px;
-			min-width: 150px;
-			&:first-child{
-				flex: 2 0 0;
-				display: flex;
-				flex-direction: column;
-				justify-content: space-between;
-				min-width: 260px;
-			}
-		}
-	}
+    @include r(767){
+        &__logo{
+            display: block;
+            text-decoration: none;
+            color: #ffffff;
+            max-width: 382px;
+            
+            margin-bottom: 30px;
+            
+        }
+    }
+	
 }

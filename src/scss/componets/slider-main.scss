@@ -52,4 +52,7 @@
     .btn{
         width: fit-content;
     }
+    @include r(767){
+        display: none;
+    }
 }

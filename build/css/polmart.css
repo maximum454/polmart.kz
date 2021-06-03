@@ -1902,6 +1902,8 @@ body.lock {
   border-radius: 4px;
   background-size: 100%;
   padding: 44px 0;
+  position: relative;
+  z-index: 110;
 }
 
 .header__row {
@@ -1927,6 +1929,7 @@ body.lock {
   text-decoration: none;
   color: #ffffff;
   max-width: 382px;
+  min-width: 100px;
   margin-right: 13px;
 }
 
@@ -2067,7 +2070,7 @@ body.lock {
   right: 0;
   width: 100%;
   height: 3px;
-  background-color: #73B211;
+  background-color: #fff;
   -webkit-transition: all 100ms ease 0s;
   -o-transition: all 100ms ease 0s;
   transition: all 100ms ease 0s;
@@ -2085,12 +2088,16 @@ body.lock {
   position: absolute;
   top: 14px;
   right: 0;
-  background-color: #73B211;
+  background-color: #fff;
   width: 100%;
   height: 3px;
   -webkit-transition: all 100ms ease 0s;
   -o-transition: all 100ms ease 0s;
   transition: all 100ms ease 0s;
+}
+
+.nav__burger.active {
+  z-index: 110;
 }
 
 .nav__burger.active:before {
@@ -2129,12 +2136,13 @@ body.lock {
 .nav__body.active {
   position: fixed;
   height: 100%;
-  padding-top: 90px;
+  padding-top: 120px;
   top: 0;
   -webkit-transition: all 300ms ease-in-out 0s;
   -o-transition: all 300ms ease-in-out 0s;
   transition: all 300ms ease-in-out 0s;
-  background-color: #f4f2f2;
+  background-color: #9bd147;
+  z-index: 100;
 }
 
 .nav__body.active:before {
@@ -2892,7 +2900,7 @@ body.lock {
 }
 
 .product-detail .table_propeties li:nth-child(2n) {
-  background: #c4c4c4;
+  background: rgba(115, 178, 17, 0.5);
 }
 
 .product-detail .table_propeties li div {
@@ -2902,6 +2910,20 @@ body.lock {
   min-width: 150px;
   padding: 10px;
   font-size: 18px;
+}
+
+.product-detail .btn {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: block;
+  text-decoration: none;
+  border: 0;
+  border-radius: 5px;
+  padding: 10px 20px;
+  background-color: #9bd147;
+  font-size: 28px;
+  color: #fff;
 }
 
 .filter {
@@ -3171,7 +3193,7 @@ body.lock {
       flex-wrap: wrap;
   list-style-type: none;
   margin: 0;
-  border-bottom: 3px solid #ECECEC;
+  border-bottom: 3px solid #73B211;
 }
 
 .tabs__link {
@@ -3434,6 +3456,7 @@ body.lock {
 }
 
 .compare-stick {
+  z-index: 50;
   position: fixed;
   right: 5px;
   width: 76px;
@@ -3563,6 +3586,13 @@ body.lock {
             justify-content: space-between;
     min-width: 260px;
   }
+
+  .card__body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -3598,6 +3628,29 @@ body.lock {
   .nav__link {
     color: #142459;
     font-size: 18px;
+  }
+
+  .footer__logo {
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    max-width: 382px;
+    margin-bottom: 30px;
+  }
+
+  .slider-main {
+    display: none;
+  }
+
+  .card__body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+  }
+
+  .product {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -3637,8 +3690,12 @@ body.lock {
     margin-right: 0;
   }
 
+  .header__phone a {
+    font-size: 15px;
+  }
+
   .header__search {
-    max-width: 100%;
+    display: none;
   }
 }
 
@@ -3650,33 +3707,6 @@ body.lock {
     margin-right: 0;
     margin-bottom: 20px;
     min-width: 236px;
-  }
-}
-
-@media only screen and (max-width: 440px) {
-  .footer__item {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 0 0px;
-            flex: 1 0 0;
-    margin: 0 0 30px;
-    min-width: 150px;
-  }
-
-  .footer__item:first-child {
-    -webkit-box-flex: 2;
-        -ms-flex: 2 0 0px;
-            flex: 2 0 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    min-width: 260px;
   }
 }
 
