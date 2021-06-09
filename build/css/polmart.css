@@ -2662,6 +2662,9 @@ body.lock {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px 0;
 }
 
 .breadcrumbs__item {
@@ -2785,6 +2788,7 @@ body.lock {
   grid-template-areas: 'slider txt' 'tabs tabs';
   grid-template-columns: minmax(440px, 660px) minmax(249px, 460px);
   grid-gap: 20px;
+  overflow: hidden;
 }
 
 .product-detail__slider {
@@ -3651,6 +3655,41 @@ body.lock {
 
   .product {
     grid-template-columns: 1fr;
+  }
+
+  .product-detail {
+    display: block;
+  }
+
+  .tabs__nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    list-style-type: none;
+    margin: 0;
+    border-bottom: 3px solid #73B211;
+  }
+
+  .sort__title {
+    width: 100%;
+  }
+
+  .calculator__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+  }
+
+  .calculator__item.delimter {
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    max-width: 100%;
   }
 }
 

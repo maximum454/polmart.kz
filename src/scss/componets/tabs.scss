@@ -35,4 +35,15 @@
 			display: block;
 		}
 	}
+	@include r(767){
+		&__nav {
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: column;
+			list-style-type: none;
+			margin: 0;
+			border-bottom: 3px solid #73B211;
+		}
+	}
+
 }

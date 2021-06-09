@@ -3,6 +3,7 @@
 	grid-template-areas: 'slider txt' 'tabs tabs';
 	grid-template-columns: minmax(440px,660px) minmax(249px,460px);
 	grid-gap: 20px;
+	overflow: hidden;
 	&__slider{
 		grid-area: slider;
 		.slider-for-product{
@@ -116,4 +117,7 @@
         font-size: 28px;
         color: #fff;
     }
+	@include  r(767){
+		display: block;
+	}
 }

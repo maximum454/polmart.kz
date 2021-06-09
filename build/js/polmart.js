@@ -10279,12 +10279,6 @@ $(function () {
         speed: 300,
         slidesToShow: 1,
         adaptiveHeight: false,
-        responsive: [
-            {
-                breakpoint: 767,
-                settings: "unslick"
-            }
-        ]
     });
 
     sliderMain.on('afterChange', function(event, slick, current){
