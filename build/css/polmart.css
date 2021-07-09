@@ -1829,6 +1829,7 @@ body.lock {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  overflow: hidden;
 }
 
 .container {
@@ -3599,6 +3600,30 @@ body.lock {
     grid-column-gap: 20px;
     grid-row-gap: 20px;
   }
+
+  .paginations li {
+    background-color: #fff;
+    margin: 0 3px;
+    border-radius: 4px;
+  }
+
+  .paginations li a,
+  .paginations li span {
+    min-width: 25px;
+    height: 25px;
+    font-size: 13px;
+    color: #424242;
+    text-decoration: none;
+    display: block;
+    padding: 7px;
+    text-align: center;
+  }
+
+  .paginations li a.act,
+  .paginations li span.act {
+    background-color: #73B211;
+    color: #ffffff;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -3661,6 +3686,14 @@ body.lock {
 
   .product-detail {
     display: block;
+  }
+
+  .paginations li:first-child {
+    display: none;
+  }
+
+  .paginations li:last-child {
+    display: none;
   }
 
   .tabs__nav {

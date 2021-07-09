@@ -24,4 +24,35 @@
 			}
 		}
 	}
+    @include r(1023){
+        li {
+            background-color: #fff;
+            margin: 0 3px;
+            border-radius: 4px;
+            a, span {
+                min-width: 25px;
+                height: 25px;
+                font-size: 13px;
+                color: #424242;
+                text-decoration: none;
+                display: block;
+                padding: 7px;
+                text-align: center;
+                &.act{
+                    background-color: #73B211;
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+    @include r(767){
+        li{
+            &:first-child{
+                display: none;
+            }
+            &:last-child{
+                display: none;
+            }
+        }
+    }
 }
