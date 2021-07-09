@@ -21,6 +21,8 @@
 	}
 	&__img{
 		position: relative;
+        display: block;
+        text-decoration: none;
 		@include maintain-ratio(4 3);
 		img{
 			width: 100%;

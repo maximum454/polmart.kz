@@ -2513,6 +2513,8 @@ body.lock {
 
 .card__img {
   position: relative;
+  display: block;
+  text-decoration: none;
   width: 100%;
   height: 0;
   padding-bottom: 75%;
