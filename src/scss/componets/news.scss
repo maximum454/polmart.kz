@@ -1,0 +1,32 @@
+.news{
+    &__item {
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        box-shadow: 0 0 10px rgba(#000,.25);
+        margin-bottom: 20px;
+    }
+    &__img {
+        flex: 1 0 0;
+        display: block;
+        text-decoration: none;
+        img {
+            width: 100%;
+            display: block;
+        }
+    }
+    &__txt {
+        padding: 30px;
+        flex: 2 0 0;
+    }
+    &__name {
+        color: #424242;
+        font-size: 28px;
+        margin: 0 0 25px;
+    }
+    &__anons {
+        color: #424242;
+        font-size: 16px;
+        margin: 0 0 50px;
+    }
+}

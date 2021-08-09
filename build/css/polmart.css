@@ -3532,6 +3532,49 @@ body.lock {
   border: 1px solid #9bd147;
 }
 
+.news__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  margin-bottom: 20px;
+}
+
+.news__img {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 0px;
+          flex: 1 0 0;
+  display: block;
+  text-decoration: none;
+}
+
+.news__img img {
+  width: 100%;
+  display: block;
+}
+
+.news__txt {
+  padding: 30px;
+  -webkit-box-flex: 2;
+      -ms-flex: 2 0 0px;
+          flex: 2 0 0;
+}
+
+.news__name {
+  color: #424242;
+  font-size: 28px;
+  margin: 0 0 25px;
+}
+
+.news__anons {
+  color: #424242;
+  font-size: 16px;
+  margin: 0 0 50px;
+}
+
 @media only screen and (min-width: 641px) {
   .remodal {
     max-width: 700px;
